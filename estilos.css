@@ -387,7 +387,8 @@ body {
     .resenias {
         flex-direction: column;
         align-items: center;
-        gap: 5%;
+        gap: 90px;
+        margin: 90px 1% 5%;
     }
 
     .fondo-resenia {
