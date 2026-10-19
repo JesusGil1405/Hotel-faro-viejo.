@@ -152,10 +152,10 @@ body {
     box-shadow: 2px 14px 19px rgb(29, 29, 121);
 }
 
-.boton-reservas:hover,
+/* .boton-reservas:hover,
 .boton-reservas:active{
     transform: scale(1.1);
-}
+} */
 
 .habitaciones {
     display: flex;
@@ -474,5 +474,17 @@ body {
 
     .bajo-imagen p {
         font-size: 1.1em;
+    }
+}
+
+@media (hover: hover) {
+    .boton-reservas:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (hover: none) {
+    .boton-reservas:active {
+        transform: scale(1.1);
     }
 }
