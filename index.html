@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Faro Viejo</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+<nav class="nav1" id="nav1">
+    <div class="nav-barra">
+        <h1>Hotel Faro Viejo</h1>
+        <button type="button" class="btn-menu" id="btn-menu"
+            aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="nav-enlaces" id="nav-enlaces">
+        <a href="index.html" class="aqui">INICIO</a>
+        <a href="">HABITACIONES</a>
+        <a href="">EXPERIENCIAS</a>
+        <a href="">CONTACTO</a>
+    </div>
+</nav>
+
+
+    <section>
+        <article>
+            <div class="imagen-texto">
+                <div class="imagen-fachada">
+                    <img src="imagenes/fachada-del-hotel.jpg" alt="fachada de el hotel" width="100%">
+
+                    <p class="sobre-imagen1">OFERTA 20%</p>
+                    <p class="sobre-imagen2"> &#9733 · 4.8 · 320 Reseñas</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article class="reservar">
+            <h4> <span class="hotel-faro-viejo">HOTEL FARO VIEJO</span></h4>
+            <h2>Un refugio frente al Cantábrico</h2>
+            <p>Doce habitaciones con vista al mar en el corazón de <b>Cudillero</b>. Desayuno de producto local
+                , spa con agua de mar y la mejor apuesta de sol de la costa Asturiana</p>
+
+            <button type="button" class="boton-reservas">Reservar ahora</button>
+        </article>
+    </section>
+
+    <section>
+        <h3>Habitaciones destacadas</h3>
+        <p>Cada ficha lleva una etiqueta de precio flotante; la habitación central lleva una segunda etiqueta
+            superpuesta.</p>
+        <article class="habitaciones">
+            <div class="habitacion habitacion1">
+                <img src="imagenes/habitacion-cantabrico.jpg" alt="nuestra habitacion Cantábrico">
+
+                <p class="sobre-imagen3">DESDE 89€/NOCHE</p>
+
+                <div class="bajo-imagen">
+                    <p>Habitación Cantábrico</p>
+                    <em>Vistas laterales al mar</em>
+                </div>
+            </div>
+
+            <div class="habitacion habitacion2">
+                <img src="imagenes/suite-faro.jpg" alt="nuestra habitacion Suite Faro">
+                <p class="sobre-imagen4">VISTAS AL MAR</p>
+                <p class="sobre-imagen5">DESDE 145€/NOCHE</p>
+
+                <div class="bajo-imagen">
+                    <p>Suite Faro</p>
+                    <em>La más solicitada</em>
+                </div>
+            </div>
+
+            <div class="habitacion habitacion3">
+                <img src="imagenes/habitacion-acantilado.jpg" alt="nuestra habitacion Acantilado">
+                <p class="sobre-imagen6">DESDE 110€/NOCHE</p>
+
+                <div class="bajo-imagen">
+                    <p>Habitación Acantilado</p>
+                    <em>Terraza privada</em>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+    <article style="margin: 3% 0%;">
+
+        <h2>Lo que dicen nuestros huéspedes</h2>
+        <p>El avatar de cada huesped se superpone al borde superior de su tarjeta de opinión</p>
+
+
+
+        <div class="resenias">
+            <div class="fondo-resenia">
+                <div class="imagen-texto2">
+                    <img src="imagenes/foto-carnet2.jpg" alt="imagenb de Marta.P que nos dejo una buena reña">
+                    <div>
+                        <p>"Nos despertamos con el sonido del mar. Volveremos seguro."</p>
+                        <em>Marta P. · Booking.com</em>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="fondo-resenia">
+                <div class="imagen-texto2">
+                    <img src="imagenes/foto-carnet2.jpg" alt="imagenb de Marta.P que nos dejo una buena reña">
+                    <div>
+                        <p>"El desayuno con producto de la zona fue una pasada."</p>
+                        <em>Javier L. · GOOGLE</em>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <h2>Nuestros espacios</h2>
+        <p>El salón principal, con el rincón de lectura asomando por su esquina</p>
+
+
+        <div class="imagenes-superpuestas">
+            <img class="imagen-principal" src="imagenes/imagen-grande1.jpg" alt="nuestro salon acojedor">
+            <img class="sobre-imagen7" src="imagenes/imagen-grande.jpg" alt="nuestro rincon de lectura">
+        </div>
+
+        <div class="texto-footer">
+            <p>Salón principal y Rincón de lectura</p>
+            <em>Fotografías del hotel</em>
+        </div>
+    </footer>
+
+    <script>
+
+        const menu = document.getElementById('nav1');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                menu.classList.add('pegado');
+            } else {
+                menu.classList.remove('pegado');
+            }
+        });
+
+        const btnMenu = document.getElementById('btn-menu');
+        const enlaces = document.getElementById('nav-enlaces');
+
+        btnMenu.addEventListener('click', () => {
+            const abierto = enlaces.classList.toggle('abierto');
+            btnMenu.setAttribute('aria-expanded', abierto);
+});
+    </script>
+
+
+
+</body>
+
+</html>
