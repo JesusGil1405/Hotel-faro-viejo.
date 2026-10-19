@@ -152,7 +152,8 @@ body {
     box-shadow: 2px 14px 19px rgb(29, 29, 121);
 }
 
-.boton-reservas:hover {
+.boton-reservas:hover,
+.boton-reservas:active{
     transform: scale(1.1);
 }
 
